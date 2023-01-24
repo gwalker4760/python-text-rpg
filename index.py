@@ -32,7 +32,7 @@ def path():
         play_again()
     elif direction == "right":
         print('Great choice {name} you survived!')
-        # sleep(1)
+        sleep(1)
         second_path()
     elif direction == "up":
         print("You feel the need to defy the laws of the universe and will not be limited to such foolish things. You choose your own your own path so you call for no your trusty steed Buttstallion. The a ray of sunshine beams next to you, as you see your trusted companion decend from the heavens. You hop and ride off into the distance never to be seen again. All the evil in the world suddenly vanished as if it never existed. You win the game.")
@@ -122,12 +122,10 @@ def check_point_spawn():
         'Where would you like to start at? (up / down) (hide / fight) ')
     if spawn == "up" or spawn == "down":
         second_path()
-    # elif spawn == "down":
-    #     second_path()
+    
     elif spawn == "hide" or spawn == "fight":
         hide_or_fight()
-    # elif spawn == "fight":
-    #     hide_or_fight()
+    
     else:
         print("You wanna do what now?")
         sleep(1)
@@ -136,4 +134,3 @@ def check_point_spawn():
 
 beginning_of_game()
 logging.info("Game has ended")
-# fight()
